@@ -1,0 +1,13 @@
+{
+  "name": "Anastasiia",
+  "surname": "Antipina",
+  "age": 32,
+  "quantityPets": 1,
+  "pet": {
+    "species": "cat",
+    "race": "shelter",
+    "name": "Odin"
+  },
+  "desiredSalary": [1000, 1100, 1200]
+}
+
