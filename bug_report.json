@@ -1,1 +1,26 @@
-
+{
+  "Bugreport": {
+      "Summary": "Error 400 appears in the console after clicking [Create accaunt]/[Trade Now] on the block of the subitems [Economics]",
+      "Priority": "Medium",
+      "Severity": "Minor",
+      "Status": "New",
+      "Author": "Antipina AN",
+      "Description": "Error 400 appears in the console after clicking [Create accaunt]/[Trade Now] on the block of the subitems [Economics]  of the items [News] of the section [Analysis - News and Analytics]",
+      "Steps_to_reproduce": [
+	    "Navigate to capital.com EN", 
+            "Click button [Burger Menu]", 
+            "Click menu section [News and Analysis]", 
+            "Click menu item [News]", 
+            "Click subitems [Economics]", 
+            "Click button [Start Trading Now]/[Trade Now] on the block «Create a trading…/Why Capital?»"
+		],
+      "Expected_result": "Error 400 not appears in Consol",
+      "Actual_result": "Error 400 appears in Consol (Safari), Status 400  appears in Network (Chrome)",
+      "Environment":
+        {
+        "os": "MacOS Ventura 13.2",
+        "browser": "Safari/Chrome"
+        },
+      "Attachment": "Request URL: https://api.backend-capital.com/proxy/trading/v1/quoteCurrent\nResponce: {\n  \"errorCode\" : \"FIELD_VALIDATION_ERROR\",\n  \"validation\" : [ {\n    \"field\" : \"instrumentId\",\n    \"message\" : \"не может быть пусто\"\n  } ]\n}"
+	}
+}
